@@ -33,5 +33,11 @@ cask "branch" do
     end
   end
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", staged_path.to_s],
+                   sudo: false
+  end
+
   # No zap stanza required
 end
