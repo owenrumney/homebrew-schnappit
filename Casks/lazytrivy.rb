@@ -39,7 +39,7 @@ cask "lazytrivy" do
   postflight do
     # Remove quarantine attribute to avoid Gatekeeper issues
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appDir}/lazytrivy"],
+                   args: ["-cr", "#{app_dir}/lazytrivy"],
                    sudo: false
   end
 
