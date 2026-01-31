@@ -3,7 +3,7 @@ cask "schnappit" do
   name "schnappit"
   desc "A macOS screenshot utility"
   homepage "https://github.com/owenrumney/schnappit"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,7 +14,7 @@ cask "schnappit" do
   on_macos do
     on_arm do
       url "https://github.com/owenrumney/schnappit/releases/download/v#{version}/schnappit_#{version}_darwin_arm64.zip"
-      sha256 "c35dbdb8e7e9f5afc1d2ec07b783d53b816b0809e2872e5d31477e2048909ceb"
+      sha256 "d6e3b29526848fe74372375ba53cadf7d51e93eaa346b3145ba4297aad156853"
     end
   end
 
